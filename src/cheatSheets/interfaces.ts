@@ -1,4 +1,4 @@
-interface Company {
+export interface Company {
   name: string
   address: string
   houseNumber: number
@@ -7,18 +7,18 @@ interface Company {
   town: string
 }
 
-interface Toys {
+export interface Toys {
   name: string
   manufactor: Company
 }
 
-interface Work {
+export interface Work {
   start: Date
   end: Date
   company: Company
 }
 
-interface Person {
+export interface Person {
   firstName: string
   middleName?: string
   lastName: string
@@ -26,12 +26,12 @@ interface Person {
   adult: boolean
 }
 
-interface Child extends Person {
+export interface Child extends Person {
   adult: false
   toys: Toys[]
 }
 
-interface Adult extends Person {
+export interface Adult extends Person {
   adult: true
   cv: Work[]
 }

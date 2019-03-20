@@ -1,15 +1,19 @@
 {
   "author": "Michel Bitter",
   "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
   },
   "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
     "ts-node-dev": "^1.0.0-pre.32",
     "tsc-watch": "^1.0.19",
     "tslint": "^5.11.0",
-    "typescript": "3.1.6",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-react": "^3.6.0"
+    "tslint-react": "^3.6.0",
+    "typescript": "3.1.6"
   },
   "name": "typescript-course",
   "private": true,
