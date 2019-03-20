@@ -1,0 +1,32 @@
+# OS generated files #
+######################
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+
+# Standard #
+############
+**/*.scss.d.ts
+/.git/
+/.idea/
+/.vscode/
+/.wwp-cache/
+/Dockerfile
+/dist/
+/lib/
+/newrelic_agent.log
+/node_modules/
+/notes/
+/npm-debug.log
+/src/config/envVariables/encrypted.json
+/src/config/envVariables/override.json
+/src/config/envVariables/variables/
+/src/config/envVariables/envVariables.ts
+/src/customLib/*/node_modules/.bin/
+/yarn-error.log
