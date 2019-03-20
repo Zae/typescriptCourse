@@ -6,7 +6,10 @@
     "ts-node-dev": "^1.0.0-pre.32",
     "tsc-watch": "^1.0.19",
     "tslint": "^5.11.0",
-    "typescript": "3.1.6"
+    "typescript": "3.1.6",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^3.6.0"
   },
   "name": "typescript-course",
   "private": true,
@@ -18,9 +21,6 @@
     "tslint": "tslint --exclude '**/node_modules/**/*.ts?(x)' --fix --format stylish '**/*.ts?(x)'"
   },
   "version": "0.0.1",
-  "workspaces": [
-    "src/customLib/*"
-  ],
   "nyc": {
     "include": [
       "src/*.ts",
