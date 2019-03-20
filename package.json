@@ -1,0 +1,61 @@
+{
+  "author": "Michel Bitter",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tsc-watch": "^1.0.19",
+    "tslint": "^5.11.0",
+    "typescript": "3.1.6"
+  },
+  "name": "typescript-course",
+  "private": true,
+  "scripts": {
+    "start": "node lib/app",
+    "build": "yarn compile",
+    "compile": "tsc",
+    "dev": "ts-node-dev src/app",
+    "tslint": "tslint --exclude '**/node_modules/**/*.ts?(x)' --fix --format stylish '**/*.ts?(x)'"
+  },
+  "version": "0.0.1",
+  "workspaces": [
+    "src/customLib/*"
+  ],
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "cache": false,
+    "report-dir": "./coverage",
+    "exclude": [
+      "src/tests/**/**"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "extension": [
+      ".ts"
+    ]
+  },
+  "typings": [
+    "./node_modules/@types",
+    "./@typesCustom"
+  ],
+  "quokka": {
+    "env": "dev",
+    "ts": {
+      "path": "./node_modules/typescript/bin/tsc"
+    }
+  }
+}
